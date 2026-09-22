@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-display: "Cormorant Garamond", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+  --color-cream: #faf6f0;
+  --color-cream-light: #fdfbf7;
+  --color-vanilla: #f5eedf;
+  --color-beige: #e9decb;
+  --color-chocolate: #2c1810;
+  --color-chocolate-dark: #1f100a;
+  --color-chocolate-light: #44271c;
+  --color-berry: #be3a4a;
+  --color-berry-soft: #f2d9dc;
+  --color-gold: #c59b6d;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-sans);
+    background-color: #faf6f0;
+    color: #2c1810;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, .font-serif {
+    font-family: var(--font-serif);
+  }
+
+  .font-display {
+    font-family: var(--font-display);
+  }
+}
+
+/* Subtle luxury noise & texture */
+.bg-cream-grain {
+  background-color: #faf6f0;
+  background-image: radial-gradient(rgba(44, 24, 16, 0.035) 1px, transparent 0);
+  background-size: 28px 28px;
+}
+
+.bg-dark-grain {
+  background-color: #1f100a;
+  background-image: radial-gradient(rgba(245, 238, 223, 0.04) 1px, transparent 0);
+  background-size: 28px 28px;
+}
+
+/* Cream glass panels */
+.glass-cream {
+  background: rgba(255, 253, 249, 0.82);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(44, 24, 16, 0.08);
+}
+
+.glass-chocolate {
+  background: rgba(31, 16, 10, 0.88);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(245, 238, 223, 0.12);
+}
+
+/* Custom smooth scrollbar */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+

@@ -1,0 +1,6 @@
+{
+  "name": "The Velvet Whisk",
+  "description": "A luxury artisan bakery crafting unforgettable celebration cakes, handcrafted pastries, and traditional breads with passion and artistry.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
